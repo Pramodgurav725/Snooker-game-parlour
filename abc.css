@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Styles for the Game Preparation navigation bar */
+header {
+    background-color: #345422;
+    color: #fff;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.game-prep-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.game-prep-nav ul li {
+    display: inline;
+}
+
+.game-prep-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.game-prep-nav ul li a:hover {
+    background-color: #555;
+}
+
+#tablecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#table-form h3 input select{
+    padding: 1rem;
+}
+.snooker-table{
+    background-color: #028944;
+    width: 420px;
+    height: 370px;
+    border: 20px solid #654321;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#table-form,#tableNumber,#tableType,#ratePerMinute{ 
+    padding: 7px;
+    width:15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3px auto;
+    /* border-radius: 1rem; */
+}
+.snooker-table button{
+    background-color:rgb(173, 92, 63);
+    width:15rem;
+    align-items: center;
+    justify-content: center;
+    margin: 4px auto;
+    padding: .25rem;
+    border-radius: 1rem;
+}
+button:hover{
+    background-color:#355c25;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}

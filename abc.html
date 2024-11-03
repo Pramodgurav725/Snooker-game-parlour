@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="abc.css">
+</head>
+<body>
+    <header>
+        <h1>Snooker Club Game </h1>
+        <nav class="game-prep-nav">
+            <ul>
+                <li><a href="#create-table" onclick="showTableForm()">Create Table</a></li>
+                <li><a href="#view-tables" onclick="Addons()">Add-ons</a></li>
+                <li><a href="#game-rules" onclick="Inventory()">Inventory</a></li>
+                <li><a href="#settings" onclick="openSettings()">Expense</a></li>
+                <li><a href="index.html" onclick="">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="tablecontainer" class="tablecontainer">
+        <!-- Template table for dynamic addition -->
+        <div id="table-template" class="snooker-table hidden">
+            <h3>Snooker <span class="table-number">1</span><br>(Rs. 3/min)</h3>
+            <button class="checkin-btn">▶ Check In</button>
+            <button class="checkin-btn" aria-placeholder=" ">🔄 </button>
+            <div class="snooker-active hidden">
+                <button class="view-history-btn">🔄 View History</button>
+                <p class="start-time">--:--</p>
+                <div class="time-cost">
+                    <span class="elapsed-time">00:00:00</span>
+                    <span class="total-cost">Rs.0.0</span>
+                </div>
+                <div class="member-select">
+                    <input type="number" id="players" placeholder="players">
+                <!-- <select>
+                    <option value="">Select Member</option>
+                    <option value="member1">Member 1</option>
+                    <option value="member2">Member 2</option>
+                    <option value="member3">Member 3</option>
+                    <option value="member4">Member 4</option>
+                </select> -->
+                    <button class="add-member-btn">+</button>
+                </div>
+                <button class="checkout-btn">Check Out</button>
+                <button class="cost-btn">Rs. 0</button>
+        </div>
+        
+        <div class="countainer">
+            <button onclick="editTable()">Edit</button>
+            <button onclick="deleteTable()">Delete</button> 
+        </div>
+    </div>
+        <!-- <div id="table-template" class="snooker-table">
+            
+
+            <div id="start_container" class="start-container hidden">
+                <h3>Snooker <span class="table-number">1</span><br>(Rs. 3/min)</h3>
+                <button class="checkin-btn">▶ Check In</button>
+                <button class="checkin-btn">🔄 History</button>
+                <div class="snooker-active hidden">
+                    <button class="view-history-btn">🔄 View History</button>
+                    <p class="start-time">--:--</p>
+                    <div class="time-cost">
+                        <span class="elapsed-time">00:00:00</span>
+                        <span class="total-cost">Rs.0.0</span>
+                    </div>
+                    <div class="member-select">
+                        <input type="number" id="players" placeholder="players">
+                        <button class="add-member-btn">+</button>
+                    </div>
+                    <button class="checkout-btn">Check Out</button>
+                    <button class="cost-btn">Rs. 0</button>
+                </div>
+            </div>
+        </div> -->
+
+        <div id="add-table-btn" class="snooker-table">
+            <!-- <h3>+ Create Table</h3> -->
+            <div id="table-form" >
+                <h3>Create a New Table</h3>
+                <input type="text" id="tableNumber" placeholder="Table Number" required>
+                <select id="tableType" required>
+                    <option value="">Select Table Type</option>
+                    <option value="French Table">French Table</option>
+                    <option value="English Table">English Table</option>
+                    <option value="Pool Table">Pool Table</option>
+                </select>
+                <input type="number" id="ratePerMinute" placeholder="Rate per minute" required>
+            </div>
+
+            <button id="add-table-btn" onclick="createNewTable()">Create Table</button>
+        </div>
+    </div>
+    <script src="abc.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.contact-info {
+    margin-right: 30px;
+    padding-left: 60px;
+}
+nav{
+    padding-top: 30px;
+}
+
+nav button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #0074e4;
+    color: white;
+    cursor: pointer;
+
+}
+
+.tables-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.snooker-table {
+    background-color: #028944;
+    width: 420px;
+    height: 370px;
+    border: 10px solid #654321;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.snooker-table h3 {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.checkin-btn, .checkout-btn, .view-history-btn, .add-member-btn, .cost-btn {
+    background-color: #f89b1a;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.checkin-btn:hover, .checkout-btn:hover, .view-history-btn:hover {
+    background-color: #e48807;
+}
+
+.time-cost {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.member-select {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+select {
+    padding: 5px;
+}
+
+.add-member-btn {
+    margin-left: 5px;
+}
+
+.cost-btn {
+    background-color: #0074e4;
+}
+/* Add new styles for form visibility */
+#table-form {
+    background-color: #028944;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px auto;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
